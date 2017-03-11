@@ -279,6 +279,226 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/11/data_structure_01_1/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="GJN">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/uploads/img.png">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hgjn">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Hgjn" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/11/data_structure_01_1/" itemprop="url">
+                  数据结构 绪论<一>
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-11T00:50:28+08:00">
+                2017-03-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/考研408-数据结构/" itemprop="url" rel="index">
+                    <span itemprop="name">考研408_数据结构</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <a href="/2017/03/11/data_structure_01_1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/11/data_structure_01_1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p><strong>数据结构发展背景</strong>：为了分析待处理的对象以及各处理对象之间存在的关系。</p>
+</blockquote>
+<h2 id="计算机解决具体问题的粗略步骤："><a href="#计算机解决具体问题的粗略步骤：" class="headerlink" title="计算机解决具体问题的粗略步骤："></a>计算机解决具体问题的粗略步骤：</h2><blockquote>
+<ul>
+<li>从具体问题抽象出一个数学模型</li>
+<li>设计一个解此数学模型的算法</li>
+<li>编出程序，进行测试、调整直至得到最终解答<br><strong><em>寻求数学模型的实质是分析问题，从中提取出操作的对象，并找出操作对象之间含有的关系，然后用数学的语言加以描述</em></strong></li>
+</ul>
+</blockquote>
+<h2 id="数据结构的简单定义："><a href="#数据结构的简单定义：" class="headerlink" title="数据结构的简单定义："></a>数据结构的简单定义：</h2><ul>
+<li><p>数据结构是一门研究【非数值计算的程序设计问题】中<strong>计算机的操作对象</strong>以及<strong>它们之间的关系和操作等</strong>的学科。</p>
+</li>
+<li><p>在计算机科学中“数据结构”不仅仅是一般程序设计（特别是非数值计算的程序设计）的基础，而且是设计和实现<strong>编译程序、操作系统、数据库系统及其他系统程序</strong>的重要基础。</p>
+</li>
+</ul>
+<h3 id="研究范畴："><a href="#研究范畴：" class="headerlink" title="研究范畴："></a>研究范畴：</h3><blockquote>
+<ul>
+<li><h4 id="计算机硬件"><a href="#计算机硬件" class="headerlink" title="计算机硬件"></a>计算机硬件</h4>编码理论、存储装置、存取方法等</li>
+<li><h4 id="计算机软件"><a href="#计算机软件" class="headerlink" title="计算机软件"></a>计算机软件</h4>文件系统、编译程序、操作系统等</li>
+<li><h4 id="数学"><a href="#数学" class="headerlink" title="数学"></a>数学</h4></li>
+</ul>
+</blockquote>
+<div align="center"><br><img src="/img/data_structure/1_1.jpg" width="300px" align="center"><br></div>
+
+<h2 id="基本概念和术语"><a href="#基本概念和术语" class="headerlink" title="基本概念和术语"></a>基本概念和术语</h2><h3 id="data"><a href="#data" class="headerlink" title="data"></a>data</h3><blockquote>
+<p>对客观事物的符号表示，在计算机科学中是指所有能输入到计算机中并被计算机程序处理的符号的总称。</p>
+</blockquote>
+<h3 id="data-element"><a href="#data-element" class="headerlink" title="data element"></a>data element</h3><blockquote>
+<p>数据的<strong>基本单位</strong>，在计算机程序中通常作为一个整体进行考虑和处理。有时可由若干数据项组成。  </p>
+</blockquote>
+<h3 id="data-item"><a href="#data-item" class="headerlink" title="data item"></a>data item</h3><blockquote>
+<p>数据的不可分割的<strong>最小单位</strong>。</p>
+</blockquote>
+<h3 id="data-object"><a href="#data-object" class="headerlink" title="data object"></a>data object</h3><blockquote>
+<p>性质相同的data element的集合，是数据的一个子集。</p>
+</blockquote>
+<h3 id="data-structure"><a href="#data-structure" class="headerlink" title="data structure"></a>data structure</h3><blockquote>
+<ul>
+<li>简单解释：相互之间存在一种或者多种特定关系的数据元素的集合。</li>
+<li>在任何问题中，数据元素都不是孤立存在的，而是它们之间存在着某种关系，这种数据元素相互之间的关系称为 structure ，根据data element 相互之间关系的不同特性，通常有<strong>4类基本结构</strong>：<blockquote>
+<ul>
+<li><strong>集合</strong>：结构中数据元素之间除了同属一个集合的关系外，无其他关系。</li>
+<li><strong>线性结构</strong>：data element存在<strong>一对一</strong>的关系。</li>
+<li><strong>树形结构</strong>：data element存在<strong>一对多</strong>的关系。</li>
+<li><strong>图状结构或网状结构</strong>：data element存在<strong>多对多</strong>的关系。</li>
+</ul>
+</blockquote>
+</li>
+<li>形式定义：一个二元组<blockquote>
+<ul>
+<li>Data Structure=(D,S)<blockquote>
+<p>D是<strong>数据元素</strong>的有限集，S是D上<strong>关系的有限集</strong>。<br><strong>关系</strong>描述的是data element之间的逻辑关系，又称为数据的<strong>逻辑结构</strong>。</p>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+</li>
+<li>数据 <strong>在计算机中的表示（映像）</strong>称为数据的<strong>物理结构</strong>，又称存储结构。包括【数据元素的表示】和【关系的表示】。<blockquote>
+<ul>
+<li>计算机中表示信息最小单位的是bit，可以用一个由若干bit组合起来形成的一个<strong>位串</strong>表示一个data element，通常称这个位串为element或node。</li>
+<li><strong>data field</strong>：当data element由若干数据项组成时，位串中对应于各个数据项的子位串称为data field。</li>
+</ul>
+</blockquote>
+</li>
+<li>数据元素之间的<strong>关系</strong>在计算机中有两种不同的表示方法：<strong>顺序映像</strong>、<strong>非顺序映像</strong><br>对应两种不同的存储结构：<strong>顺序存储结构</strong>、<strong>链式存储结构</strong><blockquote>
+<ul>
+<li>顺序映像的特点：借助element在<strong>存储器中的相对位置</strong>来表示数据元素之间的逻辑关系。</li>
+<li>非顺序映像的特点：借助指示元素存储地址的<strong>pointer</strong>表示数据元素之间的逻辑关系。<div align="center"><br><img src="/img/data_structure/1_2.jpg" width="300px" align="center"><br></div>
+
+</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>任何一个算法的设计取决于选定的数据（逻辑）结构，而算法的实现依赖于采用的存储（物理）结构。</p>
+</blockquote>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/01/first/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -382,7 +602,7 @@
       
         
           
-            <p>First blood<br>test</p>
+            <h1 id="First-blood"><a href="#First-blood" class="headerlink" title="First blood"></a>First blood</h1><p>test</p>
 
           
         
@@ -453,7 +673,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -461,7 +681,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">categories</span>
               </a>
             </div>
@@ -470,7 +690,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
